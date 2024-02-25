@@ -1,0 +1,94 @@
+#fruit {
+  
+  min-width: 200px;
+  border: lightgray solid 2px;
+}
+
+:focus {
+  outline: none;
+}
+
+body {
+  
+background: linear-gradient(to right, yellow, darkorange);
+background-repeat:repeat;
+background-size:cover;
+margin: 0; 
+padding: 0;
+display: flex;
+justify-content: center;
+align-items: center;
+height:90vh
+}
+
+input {
+ 
+ border-radius: 5px 5px 0px 0px;
+ padding:6px;
+
+
+}
+
+
+.search-container {
+
+  position: relative;
+  transition:all .25s ease-in-out;
+  
+   
+}
+.search-container:hover {
+  translate: 0px 3px; 
+  box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.3); 
+}
+
+.search-container input,
+.search-container .suggestions {
+ 
+  width: 100%;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+.search-container .suggestions {
+  position: absolute;
+  top: 100%;
+  left: 0%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  border-radius: 0 0 5px 5px;
+  box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.3); 
+  max-height: 150px;
+  overflow-y: auto;
+  width: 106%;
+margin: 0px;
+display: none;
+z-index: 2;
+
+}
+
+ul {
+  margin: 0;
+  list-style-type: none;
+  padding:0;
+ 
+
+
+}
+ul.has-suggestions {
+  display: block;
+
+}
+
+ul li {
+  padding: 5px;
+  cursor: pointer;
+  
+}
+ul li:hover {
+  background-color: #ffe135;
+}
+ul li:active {
+  background-color: #a5a39a;
+}
+
+
